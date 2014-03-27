@@ -1,6 +1,7 @@
 <?php namespace Gawdl3y\AssetPrefixer;
 
 use Illuminate\Html\HtmlBuilder;
+use Illuminate\Routing\UrlGenerator;
 
 class AssetBuilder extends HtmlBuilder {
 	/**
