@@ -31,8 +31,8 @@ class AssetBuilder extends HtmlBuilder {
 	 * @param  bool    $secure
 	 * @return string
 	 */
-	public function script($url, $attributes = array(), $secure = null) {
-		return parent::script($this->prefix . $url, $attributes, $secure);
+	public function script($url, $attributes = array(), $secure = null, $enablePrefix = true) {
+		return parent::script(($enablePrefix ? $this->prefix : null) . $url, $attributes, $secure);
 	}
 
 	/**
@@ -43,8 +43,8 @@ class AssetBuilder extends HtmlBuilder {
 	 * @param  bool    $secure
 	 * @return string
 	 */
-	public function style($url, $attributes = array(), $secure = null) {
-		return parent::style($this->prefix . $url, $attributes, $secure);
+	public function style($url, $attributes = array(), $secure = null, $enablePrefix = true) {
+		return parent::style(($enablePrefix ? $this->prefix : null) . $url, $attributes, $secure);
 	}
 
 	/**
@@ -56,8 +56,8 @@ class AssetBuilder extends HtmlBuilder {
 	 * @param  bool    $secure
 	 * @return string
 	 */
-	public function image($url, $alt = null, $attributes = array(), $secure = null) {
-		return parent::image($this->prefix . $url, $alt, $attributes, $secure);
+	public function image($url, $alt = null, $attributes = array(), $secure = null, $enablePrefix = true) {
+		return parent::image(($enablePrefix ? $this->prefix : null) . $url, $alt, $attributes, $secure);
 	}
 
 	/**
@@ -69,8 +69,8 @@ class AssetBuilder extends HtmlBuilder {
 	 * @param  bool    $secure
 	 * @return string
 	 */
-	public function linkAsset($url, $title = null, $attributes = array(), $secure = null) {
-		return parent::linkAsset($this->prefix . $url, $title, $attributes, $secure);
+	public function linkAsset($url, $title = null, $attributes = array(), $secure = null, $enablePrefix = true) {
+		return parent::linkAsset(($enablePrefix ? $this->prefix : null) . $url, $title, $attributes, $secure);
 	}
 
 	/**
@@ -81,8 +81,8 @@ class AssetBuilder extends HtmlBuilder {
 	 * @param  array   $attributes
 	 * @return string
 	 */
-	public function linkSecureAsset($url, $title = null, $attributes = array()) {
-		return parent::linkSecureAsset($this->prefix . $url, $title, $attributes);
+	public function linkSecureAsset($url, $title = null, $attributes = array(), $enablePrefix = true) {
+		return parent::linkSecureAsset(($enablePrefix ? $this->prefix : null) . $url, $title, $attributes);
 	}
 
 	/**
