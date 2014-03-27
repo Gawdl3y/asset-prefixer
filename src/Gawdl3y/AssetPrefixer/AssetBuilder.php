@@ -84,4 +84,23 @@ class AssetBuilder extends HtmlBuilder {
 	public function linkSecureAsset($url, $title = null, $attributes = array()) {
 		return parent::linkSecureAsset($this->prefix . $url, $title, $attributes);
 	}
+
+	/**
+	 * Accessor for the asset prefix
+	 * 
+	 * @return string
+	 */
+	public function getAssetPrefix() {
+		return $this->prefix;
+	}
+
+	/**
+	 * Mutator for the asset prefix
+	 * 
+	 * @param  string $prefix
+	 * @return void
+	 */
+	public function setAssetPrefix($prefix) {
+		$this->prefix = $prefix;
+	}
 }
