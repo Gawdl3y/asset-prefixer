@@ -40,3 +40,8 @@ Output:
     <link media="all" type="text/css" rel="stylesheet" href="//somecoolcdn.com/css/42.css">
 
 When using as a drop-in replacement (you replaced the HTML facade alias), you can use `HTML::style('css/42.css')` to get the same result.
+
+
+If you need to reference an asset with a full URL, you need to specify the final parameter for the script/style/image call to be `false`. Example:
+
+    {{ Asset::script('//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', array(), null, false) }}
