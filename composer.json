@@ -1,0 +1,24 @@
+{
+	"name": "gawdl3y/asset-prefixer",
+	"description": "Automatic asset path prefixes for Laravel",
+	"keywords": ["assets", "laravel"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Schuyler Cebulskie",
+			"email": "Gawdl3y@gawdl3y.com",
+			"homepage": "https://gawdl3y.com/"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0",
+		"illuminate/support": "4.*",
+		"illuminate/validation": "4.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"Gawdl3y\\AssetPrefixer": "src/"
+		}
+	},
+	"minimum-stability": "dev"
+}
