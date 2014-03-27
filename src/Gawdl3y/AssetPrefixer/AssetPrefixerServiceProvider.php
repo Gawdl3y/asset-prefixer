@@ -2,7 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class AssetPrefixerServiceProver extends ServiceProvider {
+class AssetPrefixerServiceProvider extends ServiceProvider {
 	/**
 	 * Indicates if loading of the provider is deferred.
 	 *
