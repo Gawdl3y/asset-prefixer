@@ -29,6 +29,7 @@ class AssetBuilder extends HtmlBuilder {
 	 * @param  string  $url
 	 * @param  array   $attributes
 	 * @param  bool    $secure
+	 * @param  bool    $enablePrefix
 	 * @return string
 	 */
 	public function script($url, $attributes = array(), $secure = null, $enablePrefix = true) {
@@ -41,6 +42,7 @@ class AssetBuilder extends HtmlBuilder {
 	 * @param  string  $url
 	 * @param  array   $attributes
 	 * @param  bool    $secure
+	 * @param  bool    $enablePrefix
 	 * @return string
 	 */
 	public function style($url, $attributes = array(), $secure = null, $enablePrefix = true) {
@@ -54,6 +56,7 @@ class AssetBuilder extends HtmlBuilder {
 	 * @param  string  $alt
 	 * @param  array   $attributes
 	 * @param  bool    $secure
+	 * @param  bool    $enablePrefix
 	 * @return string
 	 */
 	public function image($url, $alt = null, $attributes = array(), $secure = null, $enablePrefix = true) {
@@ -67,6 +70,7 @@ class AssetBuilder extends HtmlBuilder {
 	 * @param  string  $title
 	 * @param  array   $attributes
 	 * @param  bool    $secure
+	 * @param  bool    $enablePrefix
 	 * @return string
 	 */
 	public function linkAsset($url, $title = null, $attributes = array(), $secure = null, $enablePrefix = true) {
@@ -79,6 +83,7 @@ class AssetBuilder extends HtmlBuilder {
 	 * @param  string  $url
 	 * @param  string  $title
 	 * @param  array   $attributes
+	 * @param  bool    $enablePrefix
 	 * @return string
 	 */
 	public function linkSecureAsset($url, $title = null, $attributes = array(), $enablePrefix = true) {
