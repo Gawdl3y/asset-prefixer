@@ -32,7 +32,7 @@ class AssetBuilder extends HtmlBuilder {
 	 * @return string
 	 */
 	public function script($url, $attributes = array(), $secure = null) {
-		return parent::script($prefix . $url, $attributes, $secure);
+		return parent::script($this->prefix . $url, $attributes, $secure);
 	}
 
 	/**
@@ -44,7 +44,7 @@ class AssetBuilder extends HtmlBuilder {
 	 * @return string
 	 */
 	public function style($url, $attributes = array(), $secure = null) {
-		return parent::style($prefix . $url, $attributes, $secure);
+		return parent::style($this->prefix . $url, $attributes, $secure);
 	}
 
 	/**
@@ -57,7 +57,7 @@ class AssetBuilder extends HtmlBuilder {
 	 * @return string
 	 */
 	public function image($url, $alt = null, $attributes = array(), $secure = null) {
-		return parent::image($prefix . $url, $alt, $attributes, $secure);
+		return parent::image($this->prefix . $url, $alt, $attributes, $secure);
 	}
 
 	/**
@@ -70,7 +70,7 @@ class AssetBuilder extends HtmlBuilder {
 	 * @return string
 	 */
 	public function linkAsset($url, $title = null, $attributes = array(), $secure = null) {
-		return parent::linkAsset($prefix . $url, $title, $attributes, $secure);
+		return parent::linkAsset($this->prefix . $url, $title, $attributes, $secure);
 	}
 
 	/**
@@ -82,6 +82,6 @@ class AssetBuilder extends HtmlBuilder {
 	 * @return string
 	 */
 	public function linkSecureAsset($url, $title = null, $attributes = array()) {
-		return parent::linkSecureAsset($prefix . $url, $title, $attributes);
+		return parent::linkSecureAsset($this->prefix . $url, $title, $attributes);
 	}
 }
