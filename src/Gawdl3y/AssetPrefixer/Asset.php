@@ -1,5 +1,7 @@
 <?php namespace Gawdl3y\AssetPrefixer;
 
+use \Illuminate\Support\Facades\Facade;
+
 /**
  * @see \Gawdl3y\AssetPrefixer\AssetBuilder
  */
