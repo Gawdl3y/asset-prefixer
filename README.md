@@ -5,7 +5,7 @@ This is a simple package that allows you to provide a prefix for asset paths, fo
 
 ## Installation
 
-Require this package in your composer.json and run `composer update` (or run `composer require gawdl3y/asset-prefixer:1.0.*`):
+Require this package in your composer.json and run `composer update` (or run `composer require gawdl3y/asset-prefixer:~1.0`):
 
     "gawdl3y/asset-prefixer": "~1.0"
 
